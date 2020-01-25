@@ -30,3 +30,9 @@ class weather(Command):
             thread_id=self.thread_id,
             thread_type=self.thread_type
         )
+
+    def define_documentation(self):
+        self.documentation = {
+            "parameters": "CITY",
+            "function": "Gives you the link to a place to get the weather of a CITY because George isn't smart enough to get it for you."
+        }
